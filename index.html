@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集</title>
+    <style>
+        .portfolio-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明背景 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    max-height: 400px; /* 設定圖片的最大高度 */
+    object-fit: cover; /* 保持圖片比例 */
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">我的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">作品集</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">聯繫我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>歡迎來到 50915104 李瑋澄的作品集</h1>
+        <p class="lead">探索我的作品與我的創作</p>
+    </header>
+
+    <!-- 作品輪播 -->
+    <section id="carousel" class="py-5">
+        <div class="container">
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC1JF0Otl2nFa8HVvLyrGSabR_j_U-z4Krpsr4Hug3LGKJFjf6A2e3UzYS-d86U1PTp9Xy2tCQGebX0FWMv-2dLyNVAVTztjyXaNEc3ZO53ILcQlyhBeUGyrb7YUBQ0wqQJICxZGAAawb7/s400/bg_lavender_flower.jpg" class="d-block w-100" alt="作品1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>你好，我是李瑋澄</h5>
+                            <p>我是資訊工程科的學生。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmI2KQj-5zQ227amAOP3lg-uwEJ4xNU3BeM7C7ngLCnmreajazLCTQdGNlbAZl00JYJhAwNnx8mitzFDJs4tt2NPplK4ZGBpanbA9MMdGiDEiSI_dpF2o634GWNheYERRjFz5qZCPlvOwI/s180-c/bg_natural_river.jpg" class="d-block w-100" alt="作品2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>這裡是我的作品集</h5>
+                            <p>這個作品集還會持續更新。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwbwgcXnjmEMHEZrDVlFcscYDMYt8Zc2k7CHEDuITY-fam9BAoF9M0SCX8M41KDsSmJ6q4W-uVv6r9NctPtBLG9SfnvwPPdZmhnagDIBsPz_Yo_vAQezeDacgZQ2ZafZ-OM-cDKZX0ddgJ/s600/bg_sakura_night.jpg" class="d-block w-100" alt="作品3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>希望你有個美好的一天</h5>
+                            <p>Have a nice day!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#portfolioCarousel" data-bs-slide-to="" class="active"></li>
+                    <li data-bs-target="#portfolioCarousel" data-bs-slide-to=""></li>
+                    <li data-bs-target="#portfolioCarousel" data-bs-slide-to=""></li>
+                </ol>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一個</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一個</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>關於我</h2>
+                    <p>我是李瑋澄，一名專業的程式設計師和開發者，擁有多年的經驗，專注於後端與韌體技術。</p>
+                    <p>我的專業領域包括 HTML、CSS、JavaScript、Bootstrap 以及各種後端技術。</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgizQrPDeyxoY-U77Wb_dEENjq9DOzP8u4U7k279EqFjly8gTQwSgUTJErWo0WZ4mDTbn6CgJVqwBTTJonlovN3TZkFP_2kTEv0e5Gx2aLJPGvqgbtDUtG0zLZxa-3Tr5jF58TbCE-FXQqY/s500/train_arashiyama_torokko_kouyou.png" alt="關於我圖片" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">我的作品</h2>
+            <div class="row">
+                <!-- 作品 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-item">
+                        <img src="https://media.istockphoto.com/id/1366199097/zh/%E5%90%91%E9%87%8F/simple-rock-paper-scissors-mark-illustration.jpg?s=612x612&w=0&k=20&c=fai1QrWwfad5tRPzsVdLPH9ro18QygqGmDhpjkCvGAw=" class="card-img-top" alt="作品1">
+                        <div class="card-body">
+                            <h5 class="card-title">剪刀石頭布遊戲</h5>
+                            <p class="card-text">0918的作業</p>
+                            <a href="https://Asakii123.github.io/0918-50915104/" class="btn btn-primary">查看詳情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-item">    
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMs0scM1vjGPRF6e8mMNDsOXSo42RVPQnLXac1aT-ZWI21OuPlE7FJ-J4-rA78ffQcag7d392jhTo_qXwlXHzk04i4jOwlbGQ14Z456grAsO6yWko8FvEJ3z22oyhfdmQnTBlWnHnwulu-/s400/animalface_duck.png" class="card-img-top" alt="作品2">
+                        <div class="card-body">
+                            <h5 class="card-title">記憶力大考驗</h5>
+                            <p class="card-text">0925的作業</p>
+                            <a href="https://Asakii123.github.io/0925-50915104/" class="btn btn-primary">查看詳情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-item">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6jOvNAiGP7QOaUneCg7srznNEfCSmRWyWySx1NtQSxjAObdcNV0KuL4NeYJP76mfbv9r9mhI8wzoE7VULHppRrAhMBKj0mEwJFh5XjWo3hVJWhceIOGGKzY5NXuv51CDlQUc30zmctwrf/s400/chikyu_inseki_syoutotsu.png" class="card-img-top" alt="作品3">
+                        <div class="card-body">
+                            <h5 class="card-title">記憶大考驗 改</h5>
+                            <p class="card-text">1009的作業</p>
+                            <a href="https://Asakii123.github.io/1009_50915104/" class="btn btn-primary">查看詳情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-item">
+                        <img src="https://play-lh.googleusercontent.com/6lNTbRq-udH9WOeMgGW9YcHJq5J5Qr4JnCTejHy7-q-Uv3lUsku7wmjGxIzJ7vEUCg=w526-h296-rw" class="card-img-top" alt="作品4">
+                        <div class="card-body">
+                            <h5 class="card-title">打磚塊遊戲</h5>
+                            <p class="card-text">1023的作業</p>
+                            <a href="https://Asakii123.github.io/1023-50915104/" class="btn btn-primary">查看詳情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-item">
+                        <img src="https://miro.medium.com/v2/resize:fit:587/1*lK4tzU-kEIEcq04fu0AzQA.png" class="card-img-top" alt="作品5">
+                        <div class="card-body">
+                            <h5 class="card-title">JS套件介紹</h5>
+                            <p class="card-text">1030的作業</p>
+                            <a href="https://Asakii123.github.io/1030-50915104/" class="btn btn-primary">查看詳情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 嵌入YouTube影片 -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">影片</h2>
+            <div class="row">
+                <div class="col-md-12 mb-4 video-container">
+                    <iframe src="https://www.youtube.com/embed/CLUPkcLQm64" title="影片1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-12 mb-4 video-container">
+                    <iframe src="https://www.youtube.com/embed/S6os7SrnzCI" title="影片2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-12 mb-4 video-container">
+                    <iframe src="https://www.youtube.com/embed/R7lR2CbEZhI" title="影片3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫我 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">聯繫我</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h5>聯繫方式</h5>
+                        <p>Email: 50915104@gm.nfu.edu.tw</p>
+                        <p>電話: 0912-345678</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- 頁尾 -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>© 2024 李瑋澄. 版權所有。</p>
+        <p>
+            <a href="https://www.youtube.com/@%E7%91%8B%E6%BE%84%E6%9D%8E-d6n" class="text-white" target="_blank">Youtube</a> | 
+            <a href="https://github.com/Asakii123" class="text-white" target="_blank">Github</a>
+        </p>
+    </div>
+</footer>
+</html>
